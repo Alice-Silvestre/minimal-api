@@ -38,8 +38,6 @@ public class DbContexto : DbContext
             if (!string.IsNullOrEmpty(stringConexao))
             {
                 optionsBuilder.UseSqlServer(stringConexao);
-                //ServerVersion.Autodetect("string de conexao") autodetecta a string de conexao  (mysql usado em aula)
-
             }
         }
         

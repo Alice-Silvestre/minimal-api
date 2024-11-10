@@ -77,7 +77,6 @@ builder.Services.AddDbContext<DbContexto>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"),
     providerOptions => providerOptions.EnableRetryOnFailure());
-    //ServiceProviderServiceExtensions.Autodetect(builder.Configuration.GetConnectionString("sql-server"));
 });
 
 
